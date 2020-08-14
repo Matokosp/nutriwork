@@ -1,0 +1,408 @@
+/* media query for TABLETS */
+
+@media screen and (min-width: 720px) and (orientation: portrait) {
+
+  .header_text h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .header_text h2:nth-child(2) {
+    margin-bottom: 1.2rem;
+  }
+
+  .yellow span {
+    border-bottom: solid 7px #eaae37;
+    padding-bottom: 0px;
+  }
+
+  .header_link {
+    font-size: 1.8rem;
+  }
+
+  /* SECOND SECTION */
+
+  .section_two {
+    flex-direction: row;
+  }
+
+  .section_two div h2 {
+    font-size: 2.4rem;
+  }
+
+  .section_two div {
+    width: 50%;
+    padding: 30px;
+  }
+
+  /* SECTION THREE */
+
+  .section_three h2 {
+    position: absolute;
+    top: 20px;
+    left: 5vw;
+    font-size: 2.4rem;
+    padding: 0;
+    background: none;
+    z-index: 5;
+  }
+
+  .how_container {
+    flex-direction: row;
+    background-image: url('../images/how-bkg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-blend-mode: multiply; */
+    mix-blend-mode: multiply;
+  }
+
+  .how_item {
+    padding: 100px 5vw 30px 5vw;
+    width: 33.4%;
+    background-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
+  }
+
+  .how_item:nth-child(1) {
+    /* background-color: rgba(237,147,35,1); */
+    background: none;
+  }
+
+  .how_item:nth-child(2) {
+    /* background-color: rgba(126,194,66,1); */
+    background: none;
+  }
+
+  .how_item:nth-child(3) {
+    /* background-color: rgba(5,173,208,1); */
+    background: none;
+  }
+
+  /* VIDEO SECTION */
+
+  .video_section {
+    position: relative;
+    padding: 15vh 0 0 0;
+  }
+
+  .plate-two {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40vh;
+    width: auto;
+    z-index: 5;
+  }
+
+  .video_container {
+
+  }
+
+  /* FORM SECTION */
+
+  .form_section {
+    padding: 50px 5vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form_text {
+    width: 45%;
+  }
+
+  .form_container {
+    width: 50%;
+  }
+
+
+  /* FOOTER SECTION  */
+
+  footer {
+    background-color: #4d4d4f;
+    padding: 40px 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+    position: absolute;
+    margin-bottom: 0;
+    color: #fff;
+    bottom: 10px;
+    right: 30px;
+  }
+
+}
+
+@media screen and (min-width: 900px) and (orientation: portrait) {
+
+  /* VIDEO SECTION */
+
+  .video_section {
+    position: relative;
+    padding: 15vh 5vw 50px 5vw;
+  }
+
+}
+
+
+
+/* DESKTOP AND LAPTOPS */
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+
+  header {
+    padding: 0 8vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .header_logo {
+    left: 8vw;
+  }
+
+  .plate-one {
+    top: auto;
+    bottom: -100px;
+    height: 90vh;
+    width: auto;
+  }
+
+  .header_text {
+    position: relative;
+    bottom: 0vh;
+    left: 0vw;
+  }
+
+  .header_text h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  .header_text h2:nth-child(2) {
+    margin-bottom: 1.8rem;
+  }
+
+  .yellow span {
+    border-bottom: solid 8px #eaae37;
+  }
+
+  .header_link {
+    font-size: 2.5rem;
+  }
+
+  /* SECTION TWO */
+
+  /* SECOND SECTION */
+
+  .section_two {
+    flex-direction: row;
+  }
+
+  .section_two div h2 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  .section_two div {
+    width: 50%;
+    padding: 80px 5vw;
+  }
+
+  .section_two div p {
+    font-size: 2rem;
+  }
+
+  /* SECTION THREE */
+
+  .section_three h2 {
+    position: absolute;
+    top: 3vw;
+    left: 5vw;
+    font-size: 2.4rem;
+    padding: 0;
+    background: none;
+    z-index: 5;
+  }
+
+  .how_container {
+    flex-direction: row;
+    background-image: url('../images/how-bkg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-blend-mode: multiply; */
+    mix-blend-mode: multiply;
+  }
+
+  .how_item {
+    padding: 10vw 5vw;
+    width: 33.4%;
+    background-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
+  }
+
+  .how_item:nth-child(1) {
+    /* background-color: rgba(237,147,35,1); */
+    background: none;
+  }
+
+  .how_item:nth-child(2) {
+    /* background-color: rgba(126,194,66,1); */
+    background: none;
+  }
+
+  .how_item:nth-child(3) {
+    /* background-color: rgba(5,173,208,1); */
+    background: none;
+  }
+
+  /* VIDEO SECTION */
+
+  .video_section {
+    position: relative;
+    padding: 15vh 10vw 15vh 20vw;
+  }
+
+  .plate-two {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 40vw;
+    z-index: 5;
+  }
+
+  /* FORM SECTION */
+
+  .form_section {
+    padding: 15vh 10vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form_text {
+    width: 45%;
+  }
+
+  .form_text h2 {
+    font-size: 3rem;
+  }
+
+  .form_container {
+    width: 40%;
+  }
+
+  .form {
+    margin: 0 0 30px 0;
+  }
+
+  /* FOOTER SECTION  */
+
+  footer {
+    background-color: #4d4d4f;
+    padding: 40px 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+    position: absolute;
+    margin-bottom: 0;
+    color: #fff;
+    bottom: 10px;
+    right: 30px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+
+  header {
+    padding: 0 10vw;
+  }
+
+  .header_logo {
+    left: 10vw;
+    width: 120px;
+  }
+
+  .plate-one {
+    top: auto;
+    bottom: -120px;
+    height: auto;
+    width: 45vw;
+  }
+
+  /* SECTION TWO */
+
+  .section_two div {
+    padding: 100px 5vw;
+  }
+
+  .section_two div h2 {
+    font-size: 3.5rem;
+  }
+
+  .section_two div p {
+    font-size: 2.4rem;
+  }
+
+  /* SECTION THREE */
+
+  .section_three h2 {
+    font-size: 3rem;
+  }
+
+  .how_item h4 {
+    font-size: 1.8rem;
+  }
+
+  /* VIDEO SECTION */
+
+  .video_section {
+    position: relative;
+    padding: 20vh 5vw 20vh 25vw;
+  }
+
+  .plate-two {
+    position: absolute;
+    left: 0;
+    top: 5vw;
+    height: auto;
+    width: 35vw;
+    z-index: 5;
+  }
+
+  /* FORM SECTION */
+
+  .form_section {
+    padding: 15vh 15vw;
+  }
+
+  .form_text h2 {
+    font-size: 4rem;
+  }
+
+  /* FOOTER  */
+
+  footer {
+    padding: 60px 35vw;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+    bottom: 30px;
+    right: 5vw;
+  }
+
+}
