@@ -325,7 +325,7 @@
 
 }
 
-@media screen and (min-width: 1000px) and (orientation: landscape) {
+@media screen and (min-width: 1440px) and (orientation: landscape) {
 
   header {
     padding: 0 10vw;
