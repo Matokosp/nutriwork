@@ -78,18 +78,22 @@
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
       </div>
       <div class="form_container">
-        <form class="form" action="index.html" method="post">
-          <input type="text" name="nombre" value="Nombre">
-          <input type="text" name="apellido" value="Apellido">
+
+
+        <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return validateForm()"" method="post">
+          <input type="text" name="nombre" placeholder="Nombre" value="">
+          <input type="text" name="apellido" placeholder="Apellido" value"">
           <select name="empresa">
             <option value="agrosuper">Agrosuper</option>
           </select>
-          <input type="text" name="area" value="Área">
-          <input type="text" name="mail" value="Mail Corporativo">
-        </form>
-        <div class="submit_container">
+          <input type="text" name="area" placeholder="Área" value="">
+          <input type="text" name="mail" placeholder="Mail Corporativo" value="">
+          <div class="submit_container">
           <input class="submit" type="submit" value="Inscribirme">
         </div>
+        </form>
+
+
       </div>
     </section>
     <footer>
@@ -104,5 +108,33 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
       // $('header').parallax({imageSrc: 'assets/images/plate-1.png'});
     </script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>
+    <script type="text/javascript" src="assets/js/procesar.js"></script>
   </body>
 </html>
+
+
+<?php
+
+if(!(empty($_POST["nombre"])) && !(empty($_POST["apellido"])) && !(empty($_POST["empresa"])) && !(empty($_POST["area"])) && !(empty($_POST["mail"]))){    
+include 'dbconnection.php';
+$conn = OpenCon();
+$nombre=$_POST["nombre"];
+$apellido=$_POST["apellido"];
+$empresa=$_POST["empresa"];
+$area=$_POST["area"];
+$mail=$_POST["mail"];
+
+$sql = "INSERT INTO infoCon(nombre,apellido,empresa,area,mail) VALUES ('$nombre','$apellido','$empresa','$area','$mail')";
+
+if (mysqli_query($conn, $sql)) {
+    $SIPS = "Se te ha añadido con éxito";
+    echo $SIPS;
+  } else {
+    $SIPS= "Se ha producido un error , intentalo de nuevo";
+    echo $SIPS;
+  }
+  
+  CloseCon($conn);
+
+}
+?>
