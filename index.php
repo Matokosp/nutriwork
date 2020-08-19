@@ -8,8 +8,9 @@ $apellido=$_POST["apellido"];
 $empresa=$_POST["empresa"];
 $area=$_POST["area"];
 $mail=$_POST["mail"];
+$telefono=$_POST["telefono"];
 
-$sql = "INSERT INTO infoCon(nombre,apellido,empresa,area,mail) VALUES ('$nombre','$apellido','$empresa','$area','$mail')";
+$sql = "INSERT INTO infoCon(nombre,apellido,empresa,area,mail) VALUES ('$nombre','$apellido','$empresa','$area','$mail','$telefono')";
 
 if (mysqli_query($conn, $sql)) {
     // $SIPS = "Se te ha añadido con éxito";
@@ -103,16 +104,16 @@ if (mysqli_query($conn, $sql)) {
         </div>
         <div class="form_container" id="footer">
           <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return validateForm()"" method="post">
-            <input type="text" name="nombre" placeholder="Nombre" value="">
-            <input type="text" name="apellido" placeholder="Apellido" value"">
-            <select name="empresa">
-              <option value="agrosuper">Agrosuper</option>
-            </select>
-            <input type="text" name="area" placeholder="Área" value="">
-            <input type="text" name="mail" placeholder="Mail Corporativo" value="">
-            <input type="text" name="telefono" placeholder="Teléfono" value="">
-            <div class="submit_container">
-            <input class="submit" type="submit" value="Inscribirme">
+          <input type="text" name="nombre" placeholder="Nombre" value="">
+          <input type="text" name="apellido" placeholder="Apellido" value"">
+          <select name="empresa">
+            <option value="agrosuper">Agrosuper</option>
+          </select>
+          <input type="text" name="area" placeholder="Área" value="">
+          <input type="text" name="mail" placeholder="Mail Corporativo" value="">
+          <input type="text" name="telefono" placeholder="Teléfono" value="">
+          <div class="submit_container">
+          <input class="submit" type="submit" value="Inscribirme">
           </div>
           </form>
         </div>
