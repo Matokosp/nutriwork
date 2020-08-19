@@ -10,7 +10,7 @@ $area=$_POST["area"];
 $mail=$_POST["mail"];
 $telefono=$_POST["telefono"];
 
-$sql = "INSERT INTO infoCon(nombre,apellido,empresa,area,mail) VALUES ('$nombre','$apellido','$empresa','$area','$mail','$telefono')";
+$sql = "INSERT INTO infoCon(nombre,apellido,empresa,area,mail,telefono) VALUES ('$nombre','$apellido','$empresa','$area','$mail','$telefono')";
 
 if (mysqli_query($conn, $sql)) {
     // $SIPS = "Se te ha añadido con éxito";
