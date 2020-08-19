@@ -1,7 +1,6 @@
 /* media query for TABLETS */
 
 @media screen and (min-width: 720px) and (orientation: portrait) {
-
   .header_text h2 {
     font-size: 4rem;
     line-height: 4rem;
@@ -49,7 +48,7 @@
 
   .how_container {
     flex-direction: row;
-    background-image: url('../images/how-bkg.jpg');
+    background-image: url("../images/how-bkg.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -96,7 +95,6 @@
   }
 
   .video_container {
-
   }
 
   /* FORM SECTION */
@@ -114,7 +112,6 @@
   .form_container {
     width: 50%;
   }
-
 
   /* FOOTER SECTION  */
 
@@ -136,25 +133,41 @@
     bottom: 10px;
     right: 30px;
   }
-
 }
 
 @media screen and (min-width: 900px) and (orientation: portrait) {
-
   /* VIDEO SECTION */
 
   .video_section {
     position: relative;
     padding: 15vh 5vw 50px 5vw;
   }
-
 }
-
-
 
 /* DESKTOP AND LAPTOPS */
 
 @media screen and (min-width: 1000px) and (orientation: landscape) {
+  .wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
   header {
     padding: 0 8vw;
@@ -167,10 +180,14 @@
   }
 
   .plate-one {
-    top: auto;
-    bottom: -100px;
-    height: 90vh;
-    width: auto;
+    left: auto;
+    right: 10vw;
+    bottom: auto;
+    top: 12vh;
+    height: auto;
+    width: 45vw;
+    transform: translateZ(100px) scale(0.7);
+    z-index: 5;
   }
 
   .header_text {
@@ -232,7 +249,7 @@
 
   .how_container {
     flex-direction: row;
-    background-image: url('../images/how-bkg.jpg');
+    background-image: url("../images/how-bkg.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -322,11 +339,9 @@
     bottom: 10px;
     right: 30px;
   }
-
 }
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
-
   header {
     padding: 0 10vw;
   }
@@ -336,12 +351,12 @@
     width: 120px;
   }
 
-  .plate-one {
+  /* .plate-one {
     top: auto;
     bottom: -120px;
     height: auto;
     width: 45vw;
-  }
+  } */
 
   /* SECTION TWO */
 
@@ -404,5 +419,4 @@
     bottom: 30px;
     right: 5vw;
   }
-
 }
