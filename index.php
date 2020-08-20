@@ -92,6 +92,12 @@ if (mysqli_query($conn, $sql)) {
           </div>
         </div>
       </section>
+      <section class="video_section parallax__group">
+        <img class="img-responsive plate-two parallax__layer" src="assets/images/plate-2.png" alt="">
+        <div class="video_container">
+          <iframe src="https://www.youtube.com/embed/K6iOoc5KLXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
       <section class="form_section" id="form">
         <div class="form_text">
           <h2>¡Quiero <br>
